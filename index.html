@@ -1,68 +1,98 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Electric Cars, Solar & Clean Energy | Tesla</title>
-    
-    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
-    
-    <link rel="stylesheet" href="stylesheet.css">
 
+    <link
+      rel="icon"
+      type="image/png"
+      href="/images/favicon-32x32.png"
+      sizes="32x32"
+    />
+
+    <link rel="stylesheet" href="stylesheet.css" />
+
+    <script src="script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </head>
   <body>
-      <aside>
-        <a href="#">Read Tesla's 2020 Impact Report</a>
-      </aside>
+    <aside>
+      <a href="#">Read Tesla's 2020 Impact Report</a>
+    </aside>
 
-        <nav>
-          <h1>
-            <a href="#">
-              <svg width="120" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="5 0 342 1">
-                <path d="M0 .1a9.7 9.7 0 007 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 007-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 006-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 00-8.7 7h39.9v-21h-31.2v-7h24zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 007.1-7H78.3a9.6 9.6 0 007 7zm0 13.8h26a9.6 9.6 0 007.1-7H78.3a9.6 9.6 0 007 7zm0 14.1h26a9.6 9.6 0 007.1-7H78.3a9.6 9.6 0 007 7zM308.5 7h26a9.6 9.6 0 007-7h-40a9.6 9.6 0 007 7z"></path>
-              </svg>
-            </a>
-          </h1>
-            <ul class="menu--products">
-              <li><a href="#">Model S</a></li>
-              <li><a href="#">Model 3</a></li>
-              <li><a href="#">Model X</a></li>
-              <li><a href="#">Model Y</a></li>
-              <li><a href="#">Solar Roof</a></li>
-              <li><a href="#">Solar Panels</a></li>
-            </ul>
+    <nav>
+      <h1>
+        <a href="#">
+          <svg
+            width="120"
+            height="30"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="5 0 342 1"
+          >
+            <path
+              d="M0 .1a9.7 9.7 0 007 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 007-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 006-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 00-8.7 7h39.9v-21h-31.2v-7h24zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 007.1-7H78.3a9.6 9.6 0 007 7zm0 13.8h26a9.6 9.6 0 007.1-7H78.3a9.6 9.6 0 007 7zm0 14.1h26a9.6 9.6 0 007.1-7H78.3a9.6 9.6 0 007 7zM308.5 7h26a9.6 9.6 0 007-7h-40a9.6 9.6 0 007 7z"
+            ></path>
+          </svg>
+        </a>
+      </h1>
+      <ul class="nav--products">
+        <li><a href="#">Model S</a></li>
+        <li><a href="#">Model 3</a></li>
+        <li><a href="#">Model X</a></li>
+        <li><a href="#">Model Y</a></li>
+        <li><a href="#">Solar Roof</a></li>
+        <li><a href="#">Solar Panels</a></li>
+      </ul>
 
-            <ul class="menu--nav">
-              <li><a href="#">Shop</a></li>
-              <li><a href="#">Account</a></li>
-              <li><a href="#">Menu</a></li>
-            </ul>
-        </nav>
+      <ul class="nav--side-menu">
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Account</a></li>
+        <li>
+          <a href="#">Menu</a>
+          <ul class="nav--menu-list">
+            <li><a href="#">Existing Inventory</a></li>
+            <li><a href="#">Used Inventory</a></li>
+            <li><a href="#">Trade-In</a></li>
+            <li><a href="#">Test Drive</a></li>
+            <li><a href="#">Cybertruck</a></li>
+            <li><a href="#">Roadster</a></li>
+            <li><a href="#">Semi</a></li>
+            <li><a href="#">Charging</a></li>
+            <li><a href="#">Powerwall</a></li>
+            <li><a href="#">Commercial Energy</a></li>
+            <li><a href="#">Utilities</a></li>
+            <li><a href="#">Find Us</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Investor Relations</a></li>
+            <li><a href="#">United States English</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
 
     <main>
-
       <section class="model_S">
         <div class="hero--title">
           <h1>Model S</h1>
           <p>Order Online for <a href="#">Touchless Delivery</a></p>
         </div>
 
-          <div class="hero--buttons">
-            <button class="hero--left-button" href="#">Custom Order</button>
-            <button class="hero--right-button" href="#">Existing Inventory</button>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
-              <path stroke-width="1.5" d="M10.5 17.5l4.5-4 4.5 4"></path>
-            </svg>
-          </div>
-
+        <div class="hero--buttons">
+          <button class="hero--left-button" href="#">Custom Order</button>
+          <button class="hero--right-button" href="#">
+            Existing Inventory
+          </button>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+            <path stroke-width="1.5" d="M10.5 17.5l4.5-4 4.5 4"></path>
+          </svg>
+        </div>
       </section>
-
 
       <section class="model_Y">
         <div class="hero--title">
@@ -72,10 +102,11 @@
 
         <div class="hero--buttons">
           <button class="hero--left-button" href="#">Custom Order</button>
-          <button class="hero--right-button" href="#">Existing Inventory</button>
+          <button class="hero--right-button" href="#">
+            Existing Inventory
+          </button>
         </div>
       </section>
-
 
       <section class="model_3">
         <div class="hero--title">
@@ -85,10 +116,11 @@
 
         <div class="hero--buttons">
           <button class="hero--left-button" href="#">Custom Order</button>
-          <button class="hero--right-button" href="#">Existing Inventory</button>
+          <button class="hero--right-button" href="#">
+            Existing Inventory
+          </button>
         </div>
       </section>
-
 
       <section class="model_X">
         <div class="hero--title">
@@ -98,10 +130,11 @@
 
         <div class="hero--buttons">
           <button class="hero--left-button" href="#">Custom Order</button>
-          <button class="hero--right-button" href="#">Existing Inventory</button>
+          <button class="hero--right-button" href="#">
+            Existing Inventory
+          </button>
         </div>
       </section>
-
 
       <section class="solar_panels">
         <div class="hero--title">
@@ -115,11 +148,10 @@
         </div>
       </section>
 
-
       <section class="solar_roof">
         <div class="hero--title">
           <h1>Solar Roof</h1>
-          <p> Produce Clean Energy From Your Roof</p>
+          <p>Produce Clean Energy From Your Roof</p>
         </div>
 
         <div class="hero--buttons">
@@ -128,18 +160,16 @@
         </div>
       </section>
 
-
       <section class="accessories">
         <div class="hero--title">
           <h1>Accessories</h1>
         </div>
 
-          <div class="hero--buttons">
-            <button href="#">Shop Now</button>
-          </div>
+        <div class="hero--buttons">
+          <button href="#">Shop Now</button>
+        </div>
       </section>
-
-  </main>
+    </main>
 
     <footer>
       <ul>
@@ -152,6 +182,5 @@
         <li><a href="#">Locations</a></li>
       </ul>
     </footer>
-
   </body>
 </html>

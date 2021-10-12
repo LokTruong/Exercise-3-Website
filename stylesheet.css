@@ -1,203 +1,222 @@
-html, body, main {
-    overflow:visible;
-    box-sizing: border-box;
+html,
+body,
+main {
+  overflow: visible;
+  box-sizing: border-box;
+  font-family: "Gotham SSm", "-apple-system", "BlinkMacSystemFont", "Segoe UI",
+  "Roboto", "Helvetica Neue", "Arial", "sans-serif";
+  /* font-family: "-apple-system","BlinkMacSystemFont","Segoe UI","Roboto","Helvetica Neue","Arial,sans-serif"; */
 }
 
 main {
-    position: fixed;
-    width:100vw;
+  position: fixed;
+  width: 100vw;
+}
+
+.nav--menu-list {
+  display: none;
 }
 
 /* hide footer */
 
 footer ul {
-    display:none;
+  display: none;
 }
 
 /* CSS for hero screen text */
 section {
-    gap:10em;
+  gap: 10em;
 }
 
 .hero--title {
-    justify-content: center;
-    position: fixed;
-    width: 100vw;
-    transform: translateY(5vh);
+  justify-content: center;
+  position: fixed;
+  width: 100vw;
+  transform: translateY(5vh);
+}
+
+.hero--title p,
+.hero--title a {
+  color: black;
+  opacity:75%;
+  font-weight: 200;
 }
 
 .hero--buttons {
-    display:inline;
-    position: fixed;
-    width: 100vw;
-    transform: translateY(75vh);
+  display: inline;
+  position: fixed;
+  width: 100vw;
+  transform: translateY(75vh);
 }
 
 .hero--buttons ul {
-    position: fixed;
+  position: fixed;
 }
 
 .hero--title h1 {
-    font-size: xxx-large;
-    font-weight: 400;
-    margin-top: 5vh;
-    font-family: 'Gotham SSm', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif';
+  font-size: xxx-large;
+  font-weight: 400;
+  margin-top: 5vh;
 }
 
 .hero--buttons .hero--left-button {
-    background-color:black;
-    opacity:75%;
-    color:white;
-    border:none;
-    font-size:medium;
-    padding: 0.7em 4em;
-    border-radius: 2em;
-    margin-left:1em;
+  background-color: black;
+  opacity: 75%;
+  color: white;
+  border: none;
+  font-size: medium;
+  padding: 0.7em 4em;
+  border-radius: 2em;
+  margin-left: 1em;
 }
 
 .hero--buttons .hero--right-button {
-    background-color:white;
-    opacity:75%;
-    color:black;
-    border:none;
-    font-size:medium;
-    padding: 0.7em 4em;
-    border-radius: 2em;
-    margin-left:1em;
+  background-color: white;
+  opacity: 75%;
+  color: black;
+  border: none;
+  font-size: medium;
+  padding: 0.7em 4em;
+  border-radius: 2em;
+  margin-left: 1em;
 }
 
 svg {
-    display:block;
-    margin:auto;
+  display: block;
+  margin: auto;
 }
 
 /* Scroll snapping; not working yet*/
-main{
-    scroll-snap-type: y mandatory;
-    height:100vh;
-    overflow: scroll;
+main {
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+  overflow: scroll;
 }
 
 section {
-    scroll-snap-align: start;
+  scroll-snap-align: start;
 }
 
 /* Stacks images on top of each other */
-h1, p {
-    margin-top: 0;
-    margin-bottom: 0;
+h1,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* Removes margin edges from images */
 body {
-    margin:0;
+  margin: 0;
 }
 
 /* Aside announcement banner*/
 aside {
-    text-align: center;
-    margin:1em;
+  text-align: center;
+  padding: 1em;
 }
 
 aside a {
-    font-family: 'Gotham SSm', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif';
-    box-sizing: border-box;
-    font-weight: 250;
-    font-size: 400;
-    color:rgb(44, 47, 52);
+  box-sizing: border-box;
+  font-weight: 250;
+  font-size: 400;
+  color: rgb(44, 47, 52);
+  border-bottom-width: 1000;
 }
-
 
 /* navbar flex containers */
 
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin:0;
-    background-color: transparent;
-    position: fixed;
-    z-index: 1;
-    width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0;
+  background-color: transparent;
+  position: fixed;
+  z-index: 1;
+  width: 100vw;
 }
 
 nav ul li {
-    font-family: 'Gotham SSm', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif';
-    font-size: 14px;
-    font-weight: 500;
-    list-style-type: none;
+  font-size: 14px;
+  font-weight: 500;
+  list-style-type: none;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color:black;
+  text-decoration: none;
+  color: black;
 }
 
 nav ul {
-    display:flex;
-    flex-direction: row;
-    gap: 2em;
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
 }
 
 section {
-    text-align: center;
-    color: #393c41;
-    font-family: 'Gotham SSm', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif';
-    overflow-y: auto;
+  text-align: center;
+  color: #393c41;
+  /* font-family: "Gotham SSm", "-apple-system", "BlinkMacSystemFont", "Segoe UI",
+    "Roboto", "Helvetica Neue", "Arial", "sans-serif"; */
+  overflow-y: auto;
 }
-
 
 /* Homescreen pics */
-.model_S , .model_Y, .model_3, .model_X, .solar_panels, .solar_roof, .accessories {
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-    display:grid;
-    justify-content: center;
+.model_S,
+.model_Y,
+.model_3,
+.model_X,
+.solar_panels,
+.solar_roof,
+.accessories {
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: grid;
+  justify-content: center;
 }
 
-.model_S  {
-    background-image: url("/images/ms-homepage-desktop.jpg");
+.model_S {
+  background-image: url("/images/ms-homepage-desktop.jpg");
 }
 
 .model_Y {
-    background-image: url("/images/Desktop-ModelY.jpg");
+  background-image: url("/images/Desktop-ModelY.jpg");
 }
 
 .model_3 {
-    background-image: url("/images/M3-Homepage-D.jpg");
+  background-image: url("/images/M3-Homepage-D.jpg");
 }
 
 .model_X {
-    background-image: url("/images/ModelX-Homepage-D.jpg");
+  background-image: url("/images/ModelX-Homepage-D.jpg");
 }
 
 .solar_panels {
-    background-image: url("/images/_25-HP-SolarPanels-D.jpg");
+  background-image: url("/images/_25-HP-SolarPanels-D.jpg");
 }
 
 .solar_roof {
-    background-image: url("/images/solar-roof-hero-desktop.jpg");
+  background-image: url("/images/solar-roof-hero-desktop.jpg");
 }
 
 .accessories {
-    background-image: url("/images/Desktop-Accessories.jpg");
+  background-image: url("/images/Desktop-Accessories.jpg");
 }
 
 /* Footer */
 
-footer ul li{
-    display: inline-block;
-    padding: 0.3em;
-    font-size: small;
+footer ul li {
+  display: inline-block;
+  padding: 0.3em;
+  font-size: small;
 }
 
 footer ul {
-    text-align: center;
-    font-family: 'Gotham SSm', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif';
+  text-align: center;
 }
 
 footer ul li a {
-    color: #5c5d61;
-    text-decoration: none;
+  color: #5c5d61;
+  text-decoration: none;
 }
