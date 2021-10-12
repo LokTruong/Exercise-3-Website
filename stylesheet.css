@@ -1,4 +1,12 @@
-/* Hacky on-load animations */
+/* Media Query button behavior */
+@media only screen and (max-width: 600px) {
+    button {
+        width: 90vw;
+        margin-bottom: 2vh;
+    }
+}
+
+/* On-load animations */
 @keyframes fadeInElements {
     0% {
         opacity: 0;
@@ -80,7 +88,6 @@ section {
   font-size: medium;
   padding: 0.7em 4em;
   border-radius: 2em;
-  margin-left: 1em;
 }
 
 .hero--buttons .hero--right-button {
@@ -91,7 +98,10 @@ section {
   font-size: medium;
   padding: 0.7em 4em;
   border-radius: 2em;
-  margin-left: 1em;
+}
+
+.hero--left-button, .hero--right-button {
+    margin:1vw;
 }
 
 svg {
@@ -169,6 +179,30 @@ nav ul {
   display: flex;
   flex-direction: row;
   gap: 2em;
+}
+
+/* Specific, but hacky nav positioning */
+
+.bar--logo {
+    justify-content: left;
+    padding:0.5em 0em 0em 3em;
+}
+
+.bar--products {
+    justify-content: center;
+}
+
+.nav--products {
+    justify-content: center;
+    padding-right:2vw;
+}
+
+.bar--menu {
+    justify-content: right;
+}
+
+.bar--menu ul {
+    padding-right:3vw;
 }
 
 section {

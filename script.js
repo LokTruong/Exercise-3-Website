@@ -1,3 +1,4 @@
+// Event handing for scrolling animations
 function isElementInViewport(elem) {
     var $elem = $(elem);
 
@@ -18,7 +19,8 @@ function checkState() {
     var $elem = $('.model_S .model_Y .model_3 .model_X .solar_panels .solar_roof .accessories');
 
     // If the state hasn't already been changed
-    if ($elem.hasClass('start')) return;
+    if ($elem.hasClass('start'))
+        return;
 
     if (isElementInViewport($elem)) {
         // Change the state

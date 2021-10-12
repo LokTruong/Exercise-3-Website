@@ -26,7 +26,7 @@
       <a href="#">Read Tesla's 2020 Impact Report</a>
     </aside>
 
-    <nav>
+    <nav class="bar--logo">
       <h1>
         <a href="#">
           <svg
@@ -41,6 +41,9 @@
           </svg>
         </a>
       </h1>
+    </nav>
+
+    <nav class="bar--products">
       <ul class="nav--products">
         <li><a href="#">Model S</a></li>
         <li><a href="#">Model 3</a></li>
@@ -49,10 +52,12 @@
         <li><a href="#">Solar Roof</a></li>
         <li><a href="#">Solar Panels</a></li>
       </ul>
+    </nav>
 
-      <ul class="nav--side-menu">
-        <li><a href="#">Shop</a></li>
-        <li><a href="#">Account</a></li>
+    <nav class="bar--menu">
+      <ul>
+        <li class="nav--side-menu" ><a href="#">Shop</a></li>
+        <li class="nav--side-menu" ><a href="#">Account</a></li>
         <li>
           <a href="#">Menu</a>
           <ul class="nav--menu-list">
@@ -183,4 +188,23 @@
       </ul>
     </footer>
   </body>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      function hideNav(x) {
+        if (x.matches) {
+          $(".nav--products").css("display", "none");
+          $(".nav--side-menu").css("display", "none");
+          $(".bar--logo").css("padding","0.5em 0em 0em 1.5em");
+        } else {
+          $(".nav--products").css("display", "flex");
+          $(".nav--side-menu").css("display", "flex");
+          $(".bar--logo").css("padding","0.5em 0em 0em 3em");
+        }
+      }
+
+      var x = window.matchMedia("(max-width: 1100px)");
+      hideNav(x);
+      x.addListener(hideNav);
+    });
+  </script>
 </html>
