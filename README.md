@@ -1,4 +1,4 @@
-# Project-3-Website
+# Exercise-3-Website
 A recreation of the frontpage of Tesla as part of a project for Studio 2 UXD class at Purdue.
 
 ## Languages Used
