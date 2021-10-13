@@ -298,9 +298,7 @@ nav ul {
 section {
   text-align: center;
   color: #393c41;
-  /* font-family: "Gotham SSm", "-apple-system", "BlinkMacSystemFont", "Segoe UI",
-    "Roboto", "Helvetica Neue", "Arial", "sans-serif"; */
-  overflow-y: auto;
+  /* overflow-y: auto; */
 }
 
 /* Homescreen pics */
