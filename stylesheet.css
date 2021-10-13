@@ -40,7 +40,41 @@
   }
 }
 
+@keyframes expandBounce {
+  20% {
+    transform: translateY(0px);
+  }
+  40% {
+    transform: translateY(5px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  60% {
+    transform: translateY(3px);
+  }
+  80% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
 /* Applied keyframes */
+
+.expand-more {
+  opacity: 0;
+  animation: slideIn 1.5s forwards, fadeInElements 0.5s 2s ease 1 forwards,
+    expandBounce ease 2s infinite;
+  animation-delay: 2s;
+}
 
 .model_S h1 {
   animation: titleShift ease 0.5s forwards;
@@ -163,11 +197,6 @@ section {
 .hero--left-button,
 .hero--right-button {
   margin: 1vw;
-}
-
-svg {
-  display: block;
-  margin: auto;
 }
 
 /* Scroll snapping; not working yet*/
