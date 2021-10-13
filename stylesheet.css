@@ -1,8 +1,23 @@
 /* Media Query button behavior */
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
   button {
     width: 90vw;
     margin-bottom: 2vh;
+  }
+}
+
+@media (min-width: 1310px) {
+  button {
+    margin: 1vw;
+    width:20vw;
+  }
+}
+
+@media (max-width: 1310px) and (min-width: 600px) {
+  button {
+    width: 270px;
+    margin-bottom: 2vh;
+    margin: 1vw;
   }
 }
 
@@ -194,10 +209,11 @@ section {
   border-radius: 2em;
 }
 
-.hero--left-button,
+/* .hero--left-button,
 .hero--right-button {
   margin: 1vw;
-}
+  width:20vw;
+} */
 
 /* Scroll snapping; not working yet*/
 main {
