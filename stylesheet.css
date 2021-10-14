@@ -1,4 +1,7 @@
 /* Media Query button behavior */
+
+/* Width */
+
 @media (max-width: 600px) {
   button {
     width: 90vw;
@@ -266,8 +269,8 @@ nav {
   background-color: transparent;
   position: fixed;
   z-index: 1;
-  width: 100vw;
-  transform: translateY(8vh);
+  /* width: 100vw; */
+  transform: translate(30vw, 8vh);
 }
 
 nav ul li {
@@ -292,6 +295,7 @@ nav ul {
 .bar--logo {
   justify-content: left;
   padding: 0.5em 0em 0em 3em;
+  transform: translate(1vw, 8vh);
 }
 
 .bar--products {
@@ -305,6 +309,7 @@ nav ul {
 
 .bar--menu {
   justify-content: right;
+  transform: translate(80vw, 8vh);
 }
 
 .bar--menu ul {
