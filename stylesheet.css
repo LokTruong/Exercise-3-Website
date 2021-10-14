@@ -87,7 +87,7 @@
 
 /* Applied keyframes */
 
-.expand-more {
+.expand-more svg {
   opacity: 0;
   animation: slideIn 1.5s forwards, fadeInElements 0.5s 2s ease 1 forwards,
     expandBounce ease 2s infinite;
@@ -198,7 +198,7 @@ section {
   color: white;
   border: none;
   font-size: medium;
-  padding: 0.7em 4em;
+  padding: 0.7em;
   border-radius: 2em;
 }
 
@@ -208,17 +208,16 @@ section {
   color: black;
   border: none;
   font-size: medium;
-  padding: 0.7em 4em;
+  padding: 0.7em;
   border-radius: 2em;
 }
 
 /* .hero--left-button,
 .hero--right-button {
-  margin: 1vw;
-  width:20vw;
+  text-decoration: none;
 } */
 
-/* Scroll snapping; not working yet*/
+/* Scroll snapping*/
 main {
   scroll-snap-type: y mandatory;
   height: 100vh;
@@ -449,4 +448,18 @@ footer ul {
 footer ul li a {
   color: #5c5d61;
   text-decoration: none;
+}
+
+.hero--left-button a {
+  text-decoration: none;
+  color:white;
+}
+
+.hero--right-button a {
+  text-decoration: none;
+  color:black;
+}
+
+button a {
+  padding: 0.7em 4em;
 }
