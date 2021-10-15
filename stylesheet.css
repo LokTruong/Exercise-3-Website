@@ -462,4 +462,5 @@ footer ul li a {
 
 button a {
   padding: 0.7em 4em;
+  white-space: nowrap;
 }
